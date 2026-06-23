@@ -1,5 +1,5 @@
-## cs351-url-shortener
-## Serverless URL Shortener on AWS
+# CS 351 Final Project — Serverless URL Shortener on AWS
+A fully serverless URL shortening service built on AWS Lambda, API Gateway, and DynamoDB. Final project for CS 351 Cloud Computing, Summer 2026.
 
 ---
 
