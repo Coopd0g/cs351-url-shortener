@@ -6,7 +6,7 @@ Usage:
   pip install requests
   python test_performance.py
 
-Replace BASE_URL with your actual API Gateway endpoint before running.
+BASE_URL is set to the project API Gateway endpoint.
 """
 
 import requests
@@ -56,7 +56,7 @@ def run_performance_test():
     print("=" * 55)
     print(f"  Cold Start (request 1):  {latencies[0]:.2f} ms")
     warm = latencies[1:]
-    print(f"  Warm Average (2–{NUM_REQUESTS}):    {statistics.mean(warm):.2f} ms")
+    print(f"  Warm Average (2-{NUM_REQUESTS}):    {statistics.mean(warm):.2f} ms")
     print(f"  Warm Median:             {statistics.median(warm):.2f} ms")
     print(f"  Warm Min:                {min(warm):.2f} ms")
     print(f"  Warm Max:                {max(warm):.2f} ms")
