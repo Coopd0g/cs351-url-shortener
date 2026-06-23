@@ -31,7 +31,7 @@ def lambda_handler(event, context):
 
         long_url = response['Item']['long_url']
 
-        # Increment click count (fire-and-forget; don't fail if this errors)
+        # Try to increment click count, but don't fail the redirect if this errors
         try:
             table.update_item(
                 Key={'short_code': code},
