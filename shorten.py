@@ -7,7 +7,7 @@ from datetime import datetime
 
 dynamodb = boto3.resource('dynamodb')
 TABLE_NAME = os.environ.get('TABLE_NAME', 'url-shortener')
-BASE_URL = os.environ.get('BASE_URL', 'https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/prod')
+BASE_URL = os.environ.get('BASE_URL', 'https://YOUR_API_ID.execute-api.us-east-2.amazonaws.com/prod')
 
 def generate_code(length=6):
     """Generate a random alphanumeric short code."""
